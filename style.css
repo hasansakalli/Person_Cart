@@ -22,7 +22,7 @@ body{
 .wrapper{
     display: grid;
     place-items: center;
-    width: 740px;
+    max-width: 1200px;
     padding :1em 2em ;
     
    
@@ -47,8 +47,8 @@ h1{
 .card{
     text-align: center;
     border-radius: 10px;
-    width: 550px;
-    height: 400px;
+    max-width: 550px;
+    max-height: 400px;
     background-color:#fff;
     
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -73,6 +73,7 @@ h1{
 
 img{
     border-right: 7px solid #49A6E9;
+    border-top:3px solid #49A6E9; 
     
     border-radius: 120px;
     width: clamp(4.375rem, 2.9167rem + 7.7778vw, 8.75rem);
@@ -103,7 +104,7 @@ img{
 #text{
     color:#617d98;
     font-family: var(--open);
-    font-size: 14px;
+   font-size: clamp(0.5rem, 0.375rem + 0.6667vw, 0.875rem);
 }
 #left, #right{
     color: var(--blue);
@@ -146,18 +147,3 @@ button:hover{
 }
 
 
-@media (max-width: 700px) {
-	.container { width: 30vw;
-    max-height: 80vh; }
-    .card { max-width: 25vw;
-        min-height: 90vh; }
-        .wrapper{
-            
-            max-width: 400px;
-         
-            
-           
-           
-        }
-
-        }
